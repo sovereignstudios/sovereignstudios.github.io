@@ -12,8 +12,9 @@ h1, h2, h3, h4, p {
 .content {
   position: relative;
   background-color: white;
-  border-style: groove;
-  border-radius: 10px
+  border-style: solid;
+  border-color: white;
+  border-radius: 10px;
 }
 
 #main {
