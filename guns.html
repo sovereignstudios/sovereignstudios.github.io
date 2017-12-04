@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Submissions Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+
+
+  <section class="nav">
+    <a href="index.html">
+      <img class="navicon" src="images/logo.png" width="60" height="60"/></a>
+    <section class="navlinks">
+      <a class="navtab" href="index.html">Home</a>
+      <a class="navtab" href="games.html">Our Games</a>
+      <a class="navtab" href="cookies.html">Cookies!</a>
+      <a class="navtab" href="guns.html">Guns</a>
+    </section>
+  </section>
+
+
+  <section class="guns">
+    <section class="gunsnav">
+      <center><button class="gunstab" onclick="openTab('social')">Social Media</button>
+      <button class="gunstab" onclick="openTab('team')">Our Team</button>
+      <button class="gunstab" onclick="openTab('contact')">Contact Us</button></center>
+    </section>
+
+    <section id="social" class="gunscontent">
+      <center><a class="twitter-timeline" data-width="500" data-height="470" data-theme="dark" href="https://twitter.com/SovereignIndus2">Tweets by SovereignIndus2</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></center>
+      <hr>
+    </section>
+
+    <section id="team" class="gunscontent" style="display:none">
+      <h2>Our Team</h2>
+      <p>The team was started up by Hunter Jensen and Austin Folsom. We're slowly beginning work, and we have a good handful of developers.</p>
+      <hr>
+    </section>
+
+    <section id="contact" class="gunscontent" style="display:none">
+      <h2>Contact Us</h2>
+      <p>For the time being, the best way to reach us is through our Twitter, <a style="color:#2a77b1" href= "https://twitter.com/SovereignIndus2">@SovereignIndus2.</a></p>
+      <hr>
+    </section>
+    <script>
+    function openTab(tabName) {
+        var i;
+        var x = document.getElementsByClassName("gunscontent");
+        for (i = 0; i < x.length; i++) {
+           x[i].style.display = "none";
+        }
+        document.getElementById(tabName).style.display = "block";
+    }
+    </script>
+  </section>
+
+
+</html>

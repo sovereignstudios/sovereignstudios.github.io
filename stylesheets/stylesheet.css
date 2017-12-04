@@ -82,6 +82,44 @@ h1, h2, h3, h4, p {
   background-color: red;
 }
 
+/*Guns*/
+.guns {
+  position: fixed;
+  margin: 35px;
+
+  top: 0;
+  left: 850px;
+  right: 0;
+  bottom: 0;
+
+  max-height: 635px;
+  min-width: 346px;
+  max-width: 516px;
+
+  border-style: ridge;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.gunsnav {
+  border-bottom-style: groove;
+  border-top-left-radius: 10px;
+
+  height: 35px;
+
+  background-color: #1c2326;
+  }
+
+.gunstab {
+  margin-top: 6px
+}
+
+/*
+#team, #contact {
+  color: gray;
+}
+*/
+
 /*Sidebar*/
 .sidebar {
   position: fixed;
