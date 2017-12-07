@@ -9,12 +9,15 @@
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
   </head>
 
 
   <section class="nav">
-    <iframe src="constant-content/nav.html" style="border:none"></iframe>
+   <div w3-include-html="constant-content/nav.html"></div>
+   <script>w3.includeHTML();</script>
   </section>
+
 
   <body class="content" id="main">
     <h1>Welcome to the home of Sovereign Industries!</h1>
@@ -25,7 +28,8 @@
 
 
   <section class="sidebar" id="sideframe">
-    <iframe src="constant-content/sidebar.html" style="border:none" height="600px" width="516px"></iframe>
+    <div w3-include-html="constant-content/sidebar.html"></div>
+    <script>w3.includeHTML();</script>
   </section>
 
 
