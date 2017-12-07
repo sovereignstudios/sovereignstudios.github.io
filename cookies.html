@@ -9,18 +9,13 @@
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
   </head>
 
 
   <section class="nav">
-    <a href="index.html">
-      <img class="navicon" src="images/logo.png" width="60" height="60"/></a>
-    <section class="navlinks">
-      <a class="navtab" href="index.html">Home</a>
-      <a class="navtab" href="games.html">Our Games</a>
-      <a class="navtab" href="cookies.html">Cookies!</a>
-      <a class="navtab" href="guns.html">Guns</a>
-    </section>
+   <div w3-include-html="constant-content/nav.html"></div>
+   <script>w3.includeHTML();</script>
   </section>
 
 
