@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Guns</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="../stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/github-light.css" media="screen">
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+  </head>
+
+
+  <section class="nav">
+   <div w3-include-html="../constant-content/nav.html"></div>
+   <script>w3.includeHTML();</script>
+  </section>
+
+
+  <section class="guns">
+    <section class="gunsnav">
+      <center><button class="gunstab" onclick="openTab('social')">gunA</button>
+      <button class="gunstab" onclick="openTab('team')">gunB</button>
+      <button class="gunstab" onclick="openTab('contact')">gunC</button></button></center>
+    </section>
+
+    <section id="social" class="gunscontent">
+      <h2>gun A</h2>
+      <p>ignore me</p>
+      <hr>
+    </section>
+
+    <section id="team" class="gunscontent" style="display:none">
+      <h2>gun B</h2>
+      <p>stuff</p>
+      <hr>
+    </section>
+
+    <section id="contact" class="gunscontent" style="display:none">
+      <h2>gun C</h2>
+      <p>more stuff</p>
+      <hr>
+    </section>
+    <script>
+    function openTab(tabName) {
+        var i;
+        var x = document.getElementsByClassName("gunscontent");
+        for (i = 0; i < x.length; i++) {
+           x[i].style.display = "none";
+        }
+        document.getElementById(tabName).style.display = "block";
+    }
+    </script>
+  </section>
+
+
+</html>
